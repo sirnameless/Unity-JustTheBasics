@@ -709,8 +709,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b96b5a2b2c193a4ea319d5a5ee47661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: {fileID: 1566837909}
   bunny: {fileID: 1462720675}
   bunnyButtonText: {fileID: 143398416}
+--- !u!1 &1566837908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1566837910}
+  - component: {fileID: 1566837909}
+  m_Layer: 0
+  m_Name: GLOBAL_OBJECT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1566837909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1566837908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46944c83cb9f0554f9408a2ae04fe2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players: 1
+--- !u!4 &1566837910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1566837908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 796.6885, y: 343.87595, z: -7.016769}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1956360279
 GameObject:
   m_ObjectHideFlags: 0

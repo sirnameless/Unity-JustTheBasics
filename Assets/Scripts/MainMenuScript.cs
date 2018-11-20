@@ -13,6 +13,9 @@ public class MainMenuScript : MonoBehaviour {
 
     public void StartGameScene()
     {
+        GameObject global = GameObject.Find("GLOBAL_OBJECT");
+        GlobalScript globalScript = global.GetComponent<GlobalScript>();
+        globalScript.players = 2;
         SceneManager.LoadScene("GameScene");
     }
 

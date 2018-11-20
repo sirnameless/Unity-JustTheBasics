@@ -7,7 +7,14 @@ public class GameplayScript : MonoBehaviour {
 
     private float movementSpeed = 10; //how fast our bunnies should move
 
-	void Update () {
+    private void Start()
+    {
+        GameObject global = GameObject.Find("GLOBAL_OBJECT");
+        GlobalScript globalScript = global.GetComponent<GlobalScript>();
+        Debug.Log("PLAYERS: " + globalScript.players);
+    }
+
+    void Update () {
 
         //listen for controller input
         var playerOneMovement = (Input.GetAxis("P1_Horizontal") + Input.GetAxis("P1_Horizontal_Btn")) * movementSpeed;
